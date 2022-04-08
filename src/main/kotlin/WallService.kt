@@ -4,7 +4,7 @@ class WallService {
 
     fun add(post: Post): Post {
         posts += post.copy(id = (if (posts.isEmpty()) 1 else (posts.last().id + 1)))
-        return post
+        return posts.last()
     }
 
     fun update(post: Post): Boolean {
