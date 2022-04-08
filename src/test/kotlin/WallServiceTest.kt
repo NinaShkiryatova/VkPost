@@ -37,7 +37,7 @@ class WallServiceTest {
         wallService.add(post)
 
         //assert
-        assertEquals(2, wallService.posts[0].id)
+        assertEquals(1, wallService.posts[0].id)
     }
 
     @org.junit.Test
